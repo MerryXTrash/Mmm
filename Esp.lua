@@ -16,8 +16,8 @@
 
 _G.Autoegg = true;
 while _G.Autoegg do wait()
-for i,v in pairs(game:GetService("Workspace").TheEvent.Eggs.egg1:GetDescendants()) do
-    if v.name == "TouchInterest" then
+for i,v in pairs(game:GetService("Workspace").TheEvent.Eggs:GetDescendants()) do
+    if v.name == "egg1" then
 game.Player.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Parent.CFrame
 wait(3)
 end
