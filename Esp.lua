@@ -11,3 +11,15 @@
 9 =323.6638488769531, 206.1964874267578, -797.3218383789062
 10 =369.028076171875, 212.01043701171875, -691.5950317382812
 11 =385.9029541015625, 211.31582641601562, -683.315673828125
+
+-----
+
+_G.Autoegg = true;
+while _G.Autoegg do wait()
+for i,v in pairs(game:GetService("Workspace").TheEvent.Eggs.egg1:GetDescendants()) do
+    if v.name == "TouchInterest" then
+game.Player.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Parent.CFrame
+wait(3)
+end
+end
+end
